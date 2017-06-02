@@ -1,0 +1,22 @@
+<?php
+/**
+  * @var \App\View\AppView $this
+  */
+?>
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('List Comunidad'), ['action' => 'index']) ?></li>
+    </ul>
+</nav>
+<div class="comunidad form large-9 medium-8 columns content">
+    <?= $this->Form->create($comunidad) ?>
+    <fieldset>
+        <legend><?= __('Add Comunidad') ?></legend>
+        <?php
+            echo $this->Form->input('nombre');
+        ?>
+    </fieldset>
+    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->end() ?>
+</div>
